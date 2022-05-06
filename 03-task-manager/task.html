@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <!-- Online font-awesome icons (my account) -->
+  <script src="https://kit.fontawesome.com/16bac2bdb7.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <!-- form -->
+  <form>
+    <h3>Edit task</h3>
+    <div class="form-row">
+      <span class="task-property">Task ID</span>
+      <span id="task-id">1234567890</span>
+    </div>
+    <div class="form-row">
+      <label for="task" class="task-property">Name</label>
+      <input type="text" id="task" class="form-input" value="Sample task">
+    </div>
+    <div class="form-row">
+      <label for="completed" class="task-property">Completed</label>
+      <input type="checkbox" id="completed" class="form-input">
+    </div>
+    <input type="submit" value="Edit" class="btn btn-block">
+    <small class="form-alert edit-alert">There was an error</small>
+  </form>
+  <a href="index.html" class="btn btn-back">Back to tasks</a>
+</body>
+</html>

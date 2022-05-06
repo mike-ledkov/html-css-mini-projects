@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <!-- Online font-awesome icons (my account) -->
+  <script src="https://kit.fontawesome.com/16bac2bdb7.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <!-- form -->
+  <form>
+    <h3>Task Manager</h3>
+    <!-- <label for="task" class="form-label">Enter your task</label> -->
+    <div class="form-container">
+      <input type="text" id="task" class="form-input task-input" placeholder="e.g. “Wash dishes”">
+      <input type="submit" class="btn btn-form">
+    </div>
+    <small class="form-alert">There was an error</small>
+  </form>
+  <!-- tasks -->
+  <section class="task-list">
+    <p class="loading-text">Loading...</p>
+    <!-- single task -->
+    <div class="task">
+      <i class="fa-regular fa-circle-check"></i>
+      <p class="task-name">Complete HTML&CSS Course</p>
+      <div class="icons">
+        <a href="task.html"><i class="fa-solid fa-edit"></i></a>
+        <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+      </div>
+    </div>
+    <!-- single task -->
+    <div class="task task-done">
+      <i class="fa-regular fa-circle-check"></i>
+      <p class="task-name">Sample task</p>
+      <div class="icons">
+        <a href="task.html"><i class="fa-solid fa-edit"></i></a>
+        <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
