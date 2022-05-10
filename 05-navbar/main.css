@@ -264,9 +264,10 @@ form {
 .nav-links a {
   letter-spacing: var(--spacing);
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   color: var(--gray-900);
   font-size: 1rem;
+  letter-spacing: var(--spacing);
   font-weight: 500;
   transition: var(--transition);
 }
@@ -290,7 +291,7 @@ form {
   color: var(--primary-500);
 }
 .show-nav {
-  height: 310px;
+  height: 369px;
 }
 
 @media screen and (min-width: 800px) {

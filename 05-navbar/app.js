@@ -1,5 +1,5 @@
-navBar = document.querySelector(".navbar")
-navBtn = document.querySelector(".nav-button")
+const navBar = document.querySelector(".navbar")
+const navBtn = document.querySelector(".nav-button")
 
 navBtn.addEventListener("click", showNav)
 
