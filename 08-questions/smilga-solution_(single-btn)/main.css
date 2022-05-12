@@ -10,16 +10,16 @@ html {font-size: 100%;} /*16px*/
 
 :root {
   /* primary */
-  --primary-50: #fff7ed;
-  --primary-100: #ffedd5;
-  --primary-200: #fed7aa;
-  --primary-300: #fdba74;
-  --primary-400: #fb923c;
-  --primary-500: #f97316;
-  --primary-600: #ea580c;
-  --primary-700: #c2410c;
-  --primary-800: #9a3412;
-  --primary-900: #7c2d12;
+  --primary-50: hsl(352, 65%, 95%);
+  --primary-100: hsl(352, 66%, 86%);
+  --primary-200: hsl(352, 66%, 77%);
+  --primary-300: hsl(352, 67%, 68%);
+  --primary-400: hsl(352, 66%, 59%);
+  --primary-500: hsl(352, 66%, 50%);
+  --primary-600: hsl(352, 66%, 41%);
+  --primary-700: hsl(352, 67%, 32%);
+  --primary-800: hsl(352, 66%, 23%);
+  --primary-900: hsl(352, 66%, 14%);
   /* gray */
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
@@ -227,3 +227,73 @@ form {
 /* ====================================================== */
 /* =============== Project-Specific Styles ============== */
 /* ====================================================== */
+.questions {
+  max-width: var(--fixed-width);
+  margin: 3rem auto 2rem auto;
+}
+.questions h2 {
+  text-align: center;
+  color: var(--primary-500);
+  margin-bottom: 3rem;
+}
+.question-container {
+  position: relative;
+  background-color: var(--white);
+  box-shadow: var(--shadow-2);
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.question p {
+  margin: 0;
+  color: var(--primary-500);
+  letter-spacing: var(--spacing);
+  font-weight: 500;
+}
+.buttons {
+  position: relative;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.question-btn {
+  width: 1.35rem;
+  background-color: transparent;
+  color: var(--primary-500);
+  border: 2px solid var(--primary-500);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+.question-btn .close {
+  display: none;
+}
+hr {
+  background-color: var(--gray-300);
+  height: 1px;
+  border: none;
+  display: none;
+}
+.answer {
+  margin: 1rem 0;
+  color: var(--gray-500);
+  display: none;
+}
+/* class to open/close questions with JS */
+.show-answer hr, 
+.show-answer .answer {
+  display: block;
+}
+.show-answer .open {
+  display: none;
+}
+.show-answer .close {
+  display: inline-block;
+}
