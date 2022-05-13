@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Grocery Bud</title>
   <!-- Online font-awesome icons (my account) -->
   <script src="https://kit.fontawesome.com/16bac2bdb7.js" crossorigin="anonymous"></script>
   <!-- Stylesheets -->
@@ -12,6 +12,35 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+  <section class="grocery-app">
+  <form class="grocery-form">
+    <div class="alert alert-danger">Please type in something!</div>
+    <div class="title">
+      <h2>Grocery bud</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="input-container">
+      <input type="text" name="item" class="form-input item-input" placeholder="e.g. Milk">
+      <input type="submit" name="Enter" class="btn submit-btn">
+    </div>
+  </form>
+    <div class="item-list">
+      <article class="item">
+        <span>Oranges</span>
+        <div class="buttons">
+          <button type="button" class="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </article>
+      <article class="item">
+        <span>apples</span>
+        <div class="buttons">
+          <button type="button" class="edit-btn"><i class="fa-solid fa-edit"></i></button>
+          <button type="button" class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+        </div>
+      </article>
+      <button type="button" class="clear-btn">Clear items</button>
+    </div>
+  </seciton>
 </body>
 </html>
